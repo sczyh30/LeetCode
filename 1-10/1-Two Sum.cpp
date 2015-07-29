@@ -1,3 +1,13 @@
+/**
+ O(n2) runtime, O(1) space ¨C Brute force
+ O(n) runtime, O(n) space ¨C Hash table:
+ We could reduce the runtime complexity of looking up a value to O(1) 
+ using a hash map that maps a value to its index.
+ 
+ My first solution:
+ first sort the vector, then use two flags to traverse the vector
+ and get the flag from inital vector
+**/
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
